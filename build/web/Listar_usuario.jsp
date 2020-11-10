@@ -84,48 +84,51 @@
     <body>
 
         <div class="gtco-loader"></div>
-
         <div id="page">
             <nav class="gtco-nav" role="navigation" id="barra">
-                <div class="gtco-container">	
+                <div class="gtco-container">
+
                     <div class="row">
                         <div class="col-sm-2 col-xs-12">
-                            <div id="gtco-logo"><a href="index.jsp"><img style="border-radius: 80px" src="images/LogoChe.jpg" alt="Logo" width="50px"></a></div>
+                            <div id="gtco-logo">
+                                <a href="index.jsp"><img style="border-radius: 80px" src="images/LogoChe.jpg" alt="Logo" width="50px"></a>
+                            </div>
                         </div>
                         <div class="col-xs-10 text-right menu-1">
                             <ul>
-                                <li><a href="index.jsp">Inicio</a></li>
-                                <li><a href="maestras.jsp">Volver</a></li>
+                                <li><a href="Agregar.jsp">Registrarse</a></li>
+                                <li><a href="login.jsp">Iniciar sesión</a></li>
                             </ul>
                         </div>
-                    </div>	
+                    </div>
                 </div>
             </nav>
-            <header id="gtco-header" class="gtco-cover gtco-cover-xs gtco-inner" role="banner" style="height: 300px">
-                <div class="gtco-container">
-                    <div class="row">
-                        <div class="col-md-12 col-md-offset-0 text-left">
-                            <div class="display-t">
-                                <div class="display-tc">
-                                    <div class="row">
-                                        <div class="col-md-8 animate-box">
-                                            <h1 class="no-margin" style="position: relative; bottom: 80px; left: 40px;"><strong>Registrados en ChequeaMed</strong></h1>
-                                            <h3 style="color: white; position: relative; bottom: 70px; left: 40px;">Recuerda que puedes: editar y eliminar usuarios.</h3>
-                                        </div>
+        </div>
+        <header id="gtco-header" class="gtco-cover" role="banner">
+            <div class="gtco-container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-0 text-left">
+                        <div class="display-t">
+                            <div class="display-tc">
+                                <div class="row">
+                                    <div class="col-md-7 copy animate-box" style="padding-top: 100px">
+                                        <h1><strong>Usuarios</strong></h1>
+                                        <p>Usuarios registrados en Chequeamed.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
+        </header>
         </div>
 
 
 
     <center>
         <div>
-            <h1 class="no-margin"><strong>Usuarios Registrados</strong></h1>
+            <h1 class="no-margin" style="padding-top: 30px"><strong>Usuarios Registrados</strong></h1>
             <form action="ControladorPersona" method="POST">
                 <input type="search" id="miBusqueda" name="q">
                 <a href="" onClick= return><input type="button" value="Buscar"></a><br><br>

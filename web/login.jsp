@@ -75,7 +75,7 @@
                 color: #3dcdbc;
             }
 
-            #inputs {
+            .inputs {
                 margin-bottom: 15px;
                 padding: 15px;
                 font-size: 16px;
@@ -165,15 +165,15 @@
             <form class="form-register" action="ControladorIniciosesion" method="POST">
                 <h2 class="form-title"><span>Iniciar sesión</span></h2>
                 <div class="contenedor-inputs">
-                    <input type="text" id="inputs" class="input-48" placeholder="Identificación" name="txtid" required>
-                    <input type="password" id="inputs" class="input-48" placeholder="Contraseña" name="txtcontra" required>
-                    <select name="txtcargo" id="inputs" class="form-input" required>
+                    <input type="text" id="inputId" class="inputs" placeholder="Identificación" name="txtid" style="width: 48%" required>
+                    <input type="password" id="inputContra" class="inputs" placeholder="Contraseña" name="txtcontra" style="width: 48%" required>
+                    <select name="txtcargo" id="inputCargo" class="inputs" style="width: 100%" required>
                         <option disabled selected>Selecciona un cargo</option>
                         <option value="1">Enfermera</option> 
                         <option value="2">Familiar</option>
                         <option value="3">Administrador</option>
                     </select>
-                    <input type="submit" class="btn-submit" name="accion4" value="Ingresar">  
+                    <input type="submit" id="idIngresar" class="btn-submit" name="accion4" value="Ingresar">  
                 </div>
             </form>
 
